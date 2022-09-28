@@ -212,9 +212,9 @@ h3{
     border-radius: 15px;
     gap:20px;
 }
-@media (max-width:400px){
-    .contact-form{width:100%}
-}
+
+.contact-form ::-webkit-scrollbar{width:0.8em}
+.contact-form ::-webkit-scrollbar-thumb{background-color: gray; border:none}
 
 .contact-form input, .contact-form textarea{
     max-width:100%;
@@ -222,15 +222,15 @@ h3{
     padding-left: 3px;
     transition: 450ms;
 }
-.contact-form ::-webkit-scrollbar{width:0.8em}
-.contact-form ::-webkit-scrollbar-thumb{background-color: gray; border:none}
-
-.contact-form input:focus,
-.contact-form textarea:focus{outline:none;}
-
+.contact-form textarea{
+    min-height: 150px;
+}
 .contact-form ::placeholder{
     color:hsl(0, 0%, 30%)
 }
+
+.contact-form input:focus,
+.contact-form textarea:focus{outline:none;}
 
 .contact-form button{
     font-size: 1.5em;
@@ -242,4 +242,28 @@ h3{
     cursor: pointer;
     border:2px solid hsl(165, 100%, 58%);
     box-shadow: 3px 3px 10px white;
+}
+
+@media (max-width:600px){
+    h3{
+        max-width: 95%;
+        font-size: .9em;
+    }
+    .project-img{
+        max-width: 100%;
+        min-width: 100%;
+        height:auto;
+    }
+    .web-link{
+        left:2%;
+    }
+    .code-link{
+        right:2%;
+    }
+    .project-description{
+        width:auto;
+    }
+    .contact-form{
+        width:100%;
+    }
 }

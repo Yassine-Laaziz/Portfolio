@@ -30,7 +30,7 @@ const Main = () => {
       imgAlt: "Credit Card Project",
       webLink: "https://tangierhorizons.netlify.app",
       description: `A Multi-Paged Website Made with React Route V6
-      That Soldified to me The Experience of handling and organizing Large Amount of code`,
+      That Soldified to me The Experience of handling and organizing Large Amounts of code`,
     },
   ]
   // Choose between Available Link or Unavailable Link in projects
@@ -57,7 +57,7 @@ const Main = () => {
   }
 
   return (
-    <>
+    <main className="Main">
       {/* ====Navbar===== */}
 
       <nav className="navbar">
@@ -224,7 +224,7 @@ const Main = () => {
           </form>
         </section>
       </div>
-    </>
+    </main>
   )
 }
 
