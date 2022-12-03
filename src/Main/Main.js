@@ -1,5 +1,6 @@
 import { useId } from "react"
 import "./Main.css"
+import { Projects, Contracts } from "../constants"
 
 const Main = () => {
   // Navbar
@@ -8,53 +9,6 @@ const Main = () => {
 
   // Content
   const Generate = () => useId()
-  const Projects = [
-    {
-      imgSrc: require("../Assets/Background-img.jpg"),
-      imgAlt: "Portfolio",
-      webLink: "https://Yassine-Laaziz.netlify.app",
-      codeLink: "https://github.com/Yassine-Laaziz/Portfolio.git",
-      description: "A Super simple Portfolio",
-    },
-    {
-      imgSrc: require("../Assets/credit-card-validation.png"),
-      imgAlt: "Credit Card Project",
-      webLink: "https://frontend-creditcard-authentication.netlify.app",
-      codeLink: "https://github.com/Yassine-Laaziz/Credit-card-validation",
-      description: `A Client Side Credit card Validation That simulates AJAX to backend, 
-      and based on the responseText it Behaves, I Coul've made this with stripe or an api
-      but i knew i'd learn more doing it without.`,
-    },
-    {
-      imgSrc: require("../Assets/TangierHorizons.png"),
-      imgAlt: "Credit Card Project",
-      webLink: "https://tangierhorizons.netlify.app",
-      description: `A Multi-Paged Website Made with React Route V6
-      That Soldified to me The Experience of handling and organizing Large Amounts of code`,
-    },
-  ]
-  // Choose between Available Link or Unavailable Link in projects
-  const Chooser = Project => {
-    if (Project.codeLink !== undefined) {
-      return (
-        <a
-          className="code-link"
-          rel="noopener noreferrer"
-          target="_blank"
-          href={Project.codeLink}
-          key={Generate()}
-        >
-          Show Code
-        </a>
-      )
-    } else {
-      return (
-        <div className="code-link unavailable" key={Generate()}>
-          Unavailable
-        </div>
-      )
-    }
-  }
 
   return (
     <main className="Main">
@@ -75,6 +29,9 @@ const Main = () => {
               <a href="#skills">Skills</a>
             </li>
             <li>
+              <a href="#contracts">Contracts</a>
+            </li>
+            <li>
               <a href="#projects">Projects</a>
             </li>
             <li>
@@ -89,107 +46,170 @@ const Main = () => {
       <div className="content">
         {/* About me */}
         <section id="about-me">
-          <br /> <br />
           <a href="#about-me" className="Title">
             About Me
           </a>
-          <h3 style={{ lineHeight: "50px" }}>
-            I'm Yassine, an Adaptive Team Player, I like Web development,
-            specially Making Useful Methods and New Creative Solutions, &
-            Currently I'm trying to follow my passion in mastering web
-            development, well.. Frontend for now, And don't worry if i don't
-            know a skill or something then I'm a Fast Learner.
+          <h3>
+            Hello there, I'm Yassine, a Front-end web developer who've had some
+            experience in backend because I like Web development overall, and
+            currently I'm trying to master Front-end web development, And don't
+            worry if i don't know a skill because I'm a Fast Learner.
           </h3>
         </section>
 
         {/* Skills */}
         <section id="skills">
-          <br /> <br />
           <a href="#skills" className="Title">
             skills
           </a>
-          <br />
-          <br />
           <div className="flexbox">
-            <h3>
-              <p className="list-title html-css">Html/Css</p> <br />
-              Advanced Html/Css <br />
-              Animation Basics <br />
-              Css Variables <br />
-              Regex <br />
-              more.. <br />
-            </h3>
-            <h3>
-              <p className="list-title learning">Learning</p> <br />
-              Communicating with Backend <br />
-              Advanced+ Html/Css <br />
-              Advanced React/Javascript <br />
-            </h3>
-            <h3>
-              <p className="list-title javascript">javascript</p> <br />
-              Moderate Javascript <br />
-              Moderate React <br />
-              Json/Ajax <br />
-              Regex <br />
-              Api <br />
-            </h3>
-            <h3>
-              <p className="list-title">Going To Learn</p> <br />
-              Sass <br />
-              Bootstrap <br />
-              Backend <br />
-            </h3>
-            <h3>
-              <p className="list-title other">Other</p> <br />
-              Git <br />
-              Github <br />
-              Testing/Debugging <br />
-              npm <br />
-              Regex <br />
-            </h3>
+            <div>
+              <h4>Html/Css</h4>
+              <p>
+                Tailwind <br />
+                Framer Motion <br />
+                Advanced html/css concepts <br />
+                Responsiveness <br />
+                ...
+              </p>
+            </div>
+            <div>
+              <h4>javascript</h4>
+              <p>
+                React-js <br />
+                Next-js <br />
+                TypeScript <br />
+                Axios, JSON/AJAX <br />
+                ...
+              </p>
+            </div>
+            <div>
+              <h4>Other</h4>
+              <p>
+                Git & Github <br />
+                Regex <br />
+                npm <br />
+                ...
+              </p>
+            </div>
+            <div>
+              <h4>Learning</h4>
+              <p>
+                Bootstrap <br />
+                TypeScript <br />
+              </p>
+            </div>
+            <div>
+              <h4>Backend</h4>
+              <p>
+                MERN Stack <br />
+                Signup / Login <br />
+                Authentication <br />
+                Authorization <br />
+                ...
+              </p>
+            </div>
           </div>
         </section>
+        {/* Contracts */}
+        <section id="contracts">
+          <a href="#contracts" className="Title">
+            contracts
+          </a>
+          <div className="flexbox" style={{ gap: "40px" }}>
+            {Contracts.map((Contract) => (
+              <div className="Project" key={Generate()}>
+                <div className="project-main">
+                  <img
+                    className="project-img"
+                    src={Contract.imgSrc}
+                    alt={Contract.imgAlt}
+                    key={Generate()}
+                  />
+                  <a
+                    className="web-link"
+                    href={Contract.webLink}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    key={Generate()}
+                  >
+                    Show Website
+                  </a>
+                  {Contract.codeLink ? (
+                    <a
+                      className="code-link"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      href={Contract.codeLink}
+                      key={Generate()}
+                    >
+                      Show Code
+                    </a>
+                  ) : (
+                    <div className="code-link unavailable" key={Generate()}>
+                      Unavailable
+                    </div>
+                  )}
+                </div>
+
+                <div className="project-description">
+                  {Contract.description}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        
         {/* Projects */}
         <section id="projects">
-          <br /> <br />
           <a href="#projects" className="Title">
             projects
           </a>
-          <br /> <br />
           <div className="flexbox" style={{ gap: "40px" }}>
-            {Projects.map((Project) => {
-              return (
-                <div className="Project" key={Generate()}>
-                  <div className="project-main">
-                    <img
-                      className="project-img"
-                      src={Project.imgSrc}
-                      alt={Project.imgAlt}
-                      key={Generate()}
-                    />
+            {Projects.map((Project) => (
+              <div className="Project" key={Generate()}>
+                <div className="project-main">
+                  <img
+                    className="project-img"
+                    src={Project.imgSrc}
+                    alt={Project.imgAlt}
+                    key={Generate()}
+                  />
+                  <a
+                    className="web-link"
+                    href={Project.webLink}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    key={Generate()}
+                  >
+                    Show Website
+                  </a>
+                  {Project.codeLink ? (
                     <a
-                      className="web-link"
-                      href={Project.webLink}
+                      className="code-link"
                       rel="noopener noreferrer"
                       target="_blank"
+                      href={Project.codeLink}
                       key={Generate()}
                     >
-                      Show Website
+                      Show Code
                     </a>
-                    {Chooser(Project)}
-                  </div>
-
-                  <div className="project-description">
-                    {Project.description}
-                  </div>
+                  ) : (
+                    <div className="code-link unavailable" key={Generate()}>
+                      Unavailable
+                    </div>
+                  )}
                 </div>
-              )
-            })}
+
+                <div className="project-description">
+                  {Project.description}
+                </div>
+              </div>
+            ))}
           </div>
         </section>
         {/* Contact me */}
         <section id="contact-me">
-          <br /> <br />
           <a href="#contact-me" className="Title">
             Contact Me
           </a>
