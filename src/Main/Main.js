@@ -117,95 +117,79 @@ const Main = () => {
             contracts
           </a>
           <div className="flexbox" style={{ gap: "40px" }}>
-            {Contracts.map((Contract) => (
-              <div className="Project" key={Generate()}>
-                <div className="project-main">
-                  <img
-                    className="project-img"
-                    src={Contract.imgSrc}
-                    alt={Contract.imgAlt}
-                    key={Generate()}
-                  />
-                  <a
-                    className="web-link"
-                    href={Contract.webLink}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    key={Generate()}
-                  >
-                    Show Website
-                  </a>
-                  {Contract.codeLink ? (
+            {Contracts.map((Contract) => {
+              const { Img, webLink, codeLink, description } = Contract
+              return (
+                <div className="Project" key={Generate()}>
+                  <div className="project-main">
+                    <Img />
                     <a
-                      className="code-link"
+                      className="web-link"
+                      href={webLink}
                       rel="noopener noreferrer"
                       target="_blank"
-                      href={Contract.codeLink}
-                      key={Generate()}
                     >
-                      Show Code
+                      Show Website
                     </a>
-                  ) : (
-                    <div className="code-link unavailable" key={Generate()}>
-                      Unavailable
-                    </div>
-                  )}
-                </div>
+                    {codeLink ? (
+                      <a
+                        className="code-link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href={codeLink}
+                      >
+                        Show Code
+                      </a>
+                    ) : (
+                      <div className="code-link unavailable">Unavailable</div>
+                    )}
+                  </div>
 
-                <div className="project-description">
-                  {Contract.description}
+                  <div className="project-description">{description}</div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </section>
-        
+
         {/* Projects */}
         <section id="projects">
           <a href="#projects" className="Title">
             projects
           </a>
           <div className="flexbox" style={{ gap: "40px" }}>
-            {Projects.map((Project) => (
-              <div className="Project" key={Generate()}>
-                <div className="project-main">
-                  <img
-                    className="project-img"
-                    src={Project.imgSrc}
-                    alt={Project.imgAlt}
-                    key={Generate()}
-                  />
-                  <a
-                    className="web-link"
-                    href={Project.webLink}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    key={Generate()}
-                  >
-                    Show Website
-                  </a>
-                  {Project.codeLink ? (
+            {Projects.map((Project, i) => {
+              const { Img, webLink, codeLink, description } = Project
+              return (
+                <div className="Project" key={`Projects-project-${i}`}>
+                  <div className="project-main">
+                    <Img />
                     <a
-                      className="code-link"
+                      className="web-link"
+                      href={webLink}
                       rel="noopener noreferrer"
                       target="_blank"
-                      href={Project.codeLink}
-                      key={Generate()}
                     >
-                      Show Code
+                      Show Website
                     </a>
-                  ) : (
-                    <div className="code-link unavailable" key={Generate()}>
-                      Unavailable
-                    </div>
-                  )}
-                </div>
+                    {codeLink ? (
+                      <a
+                        className="code-link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href={codeLink}
+                      >
+                        Show Code
+                      </a>
+                    ) : (
+                      <div className="code-link unavailable">Unavailable</div>
+                    )}
+                  </div>
 
-                <div className="project-description">
-                  {Project.description}
+                  <div className="project-description">{description}</div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </section>
         {/* Contact me */}

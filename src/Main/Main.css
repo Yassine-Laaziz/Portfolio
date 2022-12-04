@@ -125,7 +125,7 @@ section > * {
   border: 1px solid;
   min-width: fit-content;
   flex: 1;
-  box-shadow: 0 0 60px 1px inset hsl(0, 0%, 30%);
+  box-shadow: 0 0 100px 1px inset hsla(0, 0%, 30%, .7);
 }
 
 h3 {
