@@ -18,14 +18,11 @@ function Projects() {
           variants={fadeIn(null, '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          in the Projects section, you'll find a showcase of my personal software development projects. These projects are all learning
-          projects that i made without using hints and then validated, they highlight my expertise in TypeScript, React/Next.js, Node.js,
-          and Three.js. From web applications to interactive experiences, each project demonstrates my passion for innovative ideas and
-          cutting-edge technologies. With a focus on user-centric design and seamless user experiences, I deliver scalable and performant
-          solutions. By exploring the Projects section, you can see firsthand my problem-solving skills and attention to detail in
-          translating ideas into functional applications. Feel free to explore the Projects section to discover the diverse range of
-          projects I've completed. Each project represents a unique challenge and a testament to my commitment to excellence in software
-          development.
+          The following section are learning projects that I made that highlight my expertise in different regions of software development, 
+          from interactive 3D web experiences to back-end systems. 
+          Each project demonstrates my passion for innovative ideas and modern technologies. By exploring the Projects section, 
+          you can see firsthand my problem-solving skills and attention to detail in translating ideas into functional applications, each 
+          project represents a unique challenge and a testament to my commitment to excellence in software.
         </motion.p>
       </div>
 
