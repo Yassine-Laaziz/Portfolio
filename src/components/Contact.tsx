@@ -16,7 +16,7 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
-          action="https://formspree.io/f/xjvddgyw"
+          action={process.env.FORM_URL}
           method="POST"
           className="mt-12 flex flex-col gap-8"
         >
