@@ -2,7 +2,7 @@ export interface projectT {
   name: string
   description: string
   image: string
-  website_link: string
+  website_link?: string
   source_code_link?: string
   tags?: { name: string; color: string }[]
   stack?: { img: string; alt: string }[]

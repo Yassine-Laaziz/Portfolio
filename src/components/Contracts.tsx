@@ -10,7 +10,7 @@ function Contracts() {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Contracts.</h2>
+        <h2 className={`${styles.sectionHeadText}`}>Experience</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -18,13 +18,12 @@ function Contracts() {
           variants={fadeIn(null, '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          In the Contracts section, I showcase my experience working on various software development projects as a freelancer or independent
-          contractor. With a strong focus on delivering tailored solutions, I have collaborated with clients from diverse industries to
-          develop custom software applications, websites, and web-based systems. I excel at understanding client requirements, translating
-          them into technical specifications, and delivering high-quality work within agreed timelines and budgets. By maintaining effective
-          communication throughout the contract period, I ensure that clients are satisfied with the results and achieve their desired
-          outcomes. My ability to adapt to different project requirements and work seamlessly with remote teams makes me a reliable and
-          valuable partner for contract-based engagements.
+          Here, I have collaborated with clients from diverse industries and excelled at understanding technical 
+          requirements and delivering quality work within agreed timelines. With a strong focus on 
+          delivering tailored solutions and by maintaining effective
+          communication throughout the project period, I ensure that clients are satisfied with the results and achieve their desired
+          outcomes, my ability to adapt to different project requirements and work seamlessly with tech and non-tech teams made me a reliable and
+          valuable partner.
         </motion.p>
       </div>
 
