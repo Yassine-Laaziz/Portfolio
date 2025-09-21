@@ -16,7 +16,8 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
-          action={process.env.FORM_URL}
+        // @ts-ignore
+          action={import.meta.env.VITE_FORM_URL}
           method="POST"
           className="mt-12 flex flex-col gap-8"
         >
