@@ -18,10 +18,10 @@ function Contracts() {
           variants={fadeIn(null, '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Here, I have collaborated with clients from diverse industries and excelled at understanding technical 
-          requirements and delivering quality work within agreed timelines. With a strong focus on 
+          Here I collaborated with clients from diverse industries and excelled at understanding technical 
+          requirements and delivering quality work within agreed timelines; with a strong focus on 
           delivering tailored solutions and by maintaining effective
-          communication throughout the project period, I ensure that clients are satisfied with the results and achieve their desired
+          communication throughout the project period, I ensured that clients were satisfied with the results and had achieved their desired
           outcomes, my ability to adapt to different project requirements and work seamlessly with tech and non-tech teams made me a reliable and
           valuable partner.
         </motion.p>

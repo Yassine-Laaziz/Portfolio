@@ -46,10 +46,10 @@ const About = () => {
         variants={fadeIn(null, "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Welcome, very nice to see you!! you can call me <strong>Yassine</strong>,
+        Welcome, very nice to see you!! Let me introduce myself,
         I'm a skilled software engineer with about 4
-        years of experience. I work full-stack, but I specialize in
-        front-end, and by thorough communication, I ensure that your requirements
+        years of experience. I work full-stack, I specialize in
+        the front-end, and by thorough communication, I ensure that your requirements
         come first and are incorporated into the development process flawlessly.
         I stay up to date with the industry standards to deliver scalable,
         performant web applications. If you are looking for a talented developer

@@ -62,14 +62,14 @@ export const navLinks: { id: string; title: string }[] = [
   },
 ];
 export const services: { title: string; icon: string }[] = [
-  {
-    title: "Excellent communication",
-    icon: web,
-  },
-  {
-    title: "Excellent perspicacity",
-    icon: backend,
-  },
+  // {
+  //   title: "Excellent communication",
+  //   icon: web,
+  // },
+  // {
+  //   title: "Excellent perspicacity",
+  //   icon: backend,
+  // },
 ];
 
 export const technologies: { name: string; icon: string }[] = [
