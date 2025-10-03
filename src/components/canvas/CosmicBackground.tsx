@@ -2,7 +2,7 @@
 
 import { useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Stars, Sparkles } from '@react-three/drei'
+import { Stars, Sparkles, OrbitControls } from '@react-three/drei'
 import * as THREE from 'three'
 
 // Galaxy component
@@ -163,6 +163,7 @@ export default function CosmicBackground() {
   return (
     <div className="absolute inset-0 -z-10">
       <Canvas camera={{ position: [0, 0, 0], fov: 60 }}>
+        {/* <OrbitControls enableDamping enablePan enableRotate enableZoom  enabled/> */}
         <CosmicScene />
       </Canvas>
     </div>

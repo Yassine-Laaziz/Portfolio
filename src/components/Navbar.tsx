@@ -42,9 +42,9 @@ const Navbar = () => {
             window.scrollTo(0, 0)
           }}
         >
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Yassine &nbsp;
-            <span className="sm:block hidden"> | Laaziz </span>
+          <p className="text-white text-[18px] font-bold cursor-pointer flex font-bitcount-ink">
+            Yassine&gt; 
+            <span className="sm:block hidden font-bitcount-ink"> Laaziz </span>
           </p>
         </Link>
 

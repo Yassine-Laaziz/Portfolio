@@ -8,8 +8,8 @@ import { achievements } from '../constants'
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
-      <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
+    <div className={`mt-12 border-2 border-purple-900 rounded-[20px]`}>
+      <div className={`bg-tertiary bg-opacity-60 rounded-2xl ${styles.padding} min-h-[300px]`}>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Some of my</p>
           <h2 className={styles.sectionHeadText}>Achievements in this industry.</h2>
@@ -37,7 +37,7 @@ function AchievementCard({ index, age, achievement, description, keyPoints }: ac
       className='relative bg-black-200 p-10 rounded-3xl sm:max-w-[550px] w-full'
     >
       <p className={`${styles.sectionSubText} text-lg`}>At the age of</p>
-      <h2 className='text-7xl sm:text-9xl text-center text-yellow-400 [textShadow:5px_5px_10px] mb-4'>{age}</h2>
+      <h2 className='font-bitcount-ink text-7xl sm:text-9xl text-center text-purple-900 [textShadow:5px_5px_10px] mb-4'>{age}</h2>
       <h3 className='text-3xl text-center text-white mb-4'>{achievement}</h3>
       <p className='text-white mb-4'>{description}</p>
       <ul className='text-white'>

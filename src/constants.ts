@@ -373,29 +373,39 @@ export const projects: projectT[] = [
 ];
 
 export const achievements: achievementT[] = [
+  // {
+  //   age: 12,
+  //   achievement: "I became a software engineer",
+  //   description: `At the age of 12, I embarked on my software engineering journey by diving into Lua programming. Lua allowed me to develop various projects
+  //      and sparked my passion for coding. It was during this time that I also began exploring the world of web development.`,
+  //   keyPoints: [
+  //     "Initiated software engineering journey",
+  //     "Developed projects using Lua",
+  //     "Started exploring web development",
+  //   ],
+  // },
   {
-    age: 12,
-    achievement: "I became a software engineer",
-    description: `At the age of 12, I embarked on my software engineering journey by diving into Lua programming. Lua allowed me to develop various projects
-       and sparked my passion for coding. It was during this time that I also began exploring the world of web development.`,
+    age: 17,
+    achievement: "In a journey as an advanced software engineer",
+    description: `By the time I turned 17, I had established myself as an advanced software engineer, proficient in both
+      frontend and backend development. I specialized in creating captivating, seamless, responsive 3D user interfaces on the frontend,
+      while also architecting robust and scalable backend systems. Additionally, I expanded my knowledge in cybersecurity, ensuring the security and integrity of web applications.`,
     keyPoints: [
-      "Initiated software engineering journey",
-      "Developed projects using Lua",
-      "Started exploring web development",
+      "Advanced fullstack web development expertise specializing in client-side",
+      "Proficient in building robust and scalable infastractures",
+      "Proficient in Dev-Ops, Software Optimization, Scalability, Compatibility, and Reliability",
+      "Experience in cybersecurity, web application security, ethical hacking, kali-linux, pentesting..",
     ],
   },
   {
-    age: 15,
-    achievement: "I became an advanced Web Developer with Cybersecurity Skills",
-    description: `By the time I turned 15, I had established myself as an advanced fullstack web developer, proficient in both
-     frontend and backend development. I specialized in creating captivating 3D user interfaces and seamless user experiences on the frontend,
-      while also architecting robust and scalable backend systems. Additionally, I expanded my knowledge in cybersecurity, ensuring the security and integrity of web applications.`,
+    age: 16,
+    achievement: "Awarded multiple prizes in hackathons and related events",
+    description: `At the age of 11 I started out in Lua programming. I was a kid and Lua allowed me to develop various projects
+       that displayed my spark for the digital world, and Lua therefore allowed me at the ages of 14 & 16 to participate and win prizes in various hackathons`,
     keyPoints: [
-      "Advanced fullstack web development skills",
-      "Expertise in creating captivating 3D user interfaces and seamless user experiences on the frontend",
-      "Proficient in building robust and scalable backend system",
-      "Proficient in cutting-edge web technologies",
-      "Novice-level cybersecurity knowledge to enhance web application security",
+      "Won multiple prizes in hackathons",
+      "Developed game development projects using Lua",
+      "Started exploring web development and cybersecurity",
     ],
   },
 ];

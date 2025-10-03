@@ -12,8 +12,8 @@ const Contact = () => {
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-1 xs:flex-[0.75] bg-black-100 p-4 xs:p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>Get in</p>
+        <h3 className={styles.sectionHeadText + " font-bitcount-ink font-normal"}>Contact</h3>
 
         <form
           action="https://formspree.io/f/xjvddgyw"
@@ -34,7 +34,7 @@ const Contact = () => {
             <input
               type="email"
               name="email"
-              placeholder="What's your web address?"
+              placeholder="you can move the earth by the way"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -43,7 +43,7 @@ const Contact = () => {
             <textarea
               rows={7}
               name="message"
-              placeholder="What do you want to say?"
+              placeholder="Let's get in touch!"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
