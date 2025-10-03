@@ -1,7 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
 import {
-  About,
   Contact,
   Hero,
   Navbar,
@@ -15,7 +14,10 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <div className="bg-cover bg-opacity-20 bg-no-repeat bg-center">
+        <div className=" fixed h-screen w-full z-[-10] left-0 top-0 overflow-hidden">
+          <StarsCanvas />
+        </div>
+        <div className="relative bg-cover bg-opacity-20 bg-no-repeat bg-center">
           <Navbar />
           <Hero />
         </div>
@@ -26,7 +28,6 @@ const App = () => {
         <Tech />
         {/* <SoftSkills /> */}
         {/* <Achievements /> */}
-        <StarsCanvas />
         <div className="relative z-0">
           <Contact />
         </div>
