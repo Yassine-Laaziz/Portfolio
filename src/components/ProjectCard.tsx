@@ -22,7 +22,7 @@ export default function ProjectCard({
       <Tilt
         transitionSpeed={450}
         scale={1}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[420px] w-full flex gap-2 min-h-full"
+        className="z-10 bg-tertiary p-5 rounded-2xl sm:w-[420px] w-full flex gap-2 min-h-full"
       >
         <div className="flex-1">
           <div className="relative w-full h-[230px]">

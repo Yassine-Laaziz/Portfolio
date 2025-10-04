@@ -1,8 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
-import Layout from "./Layout";
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import Loading from "./components/Loading";
 
+const Layout = lazy(() => import("./Layout"));
 const App = () => {
   return (
     <BrowserRouter>

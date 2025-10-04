@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import styles from "../styles";
-import { Code, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row flex-shrink items-start gap-5`}
       >
-        <motion.h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] tracking-tight relative z-10">
+        <motion.h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] tracking-tight relative">
           {/* text with 2 spinning icons around it */}
           <div className="flex gap-2" id="top-text">
             <motion.div
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
           {/* Animated Text: "creating" */}
           <motion.div
-            className="ml-16"
+            className="ml-2 md:ml-8 lg:ml-16"
             initial={{ opacity: 0, x: -200, rotateX: 90, filter: "blur(20px)" }}
             animate={{ opacity: 1, x: 0, rotateX: 0, filter: "blur(0px)" }}
             transition={{
@@ -64,7 +64,7 @@ const Hero = () => {
 
           {/*  Animated Text: "An" */}
           <motion.div
-            className="ml-28 relative"
+            className="ml-4 md:ml-12 lg:ml-28 relative"
             initial={{
               opacity: 0,
               left: -100,
@@ -92,7 +92,7 @@ const Hero = () => {
           </motion.div>
           {/* Animated Text: "Experience" */}
           <motion.div
-            className="ml-32"
+            className="ml-5 md:ml-16 lg:ml-32"
             initial={{ opacity: 0, x: 200, rotateX: -90, filter: "blur(20px)" }}
             animate={{ opacity: 1, x: 0, rotateX: 0, filter: "blur(0px)" }}
             transition={{
