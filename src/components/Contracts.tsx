@@ -26,7 +26,7 @@ function Contracts() {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-16 gap-x-20 justify-center">
+      <div className="mt-20 flex flex-wrap gap-7 md:gap-16 lg:gap-x-20 justify-center">
         {contracts.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

@@ -1,18 +1,21 @@
+import { lazy } from "react";
 import {
   Contact,
   Hero,
   Navbar,
   Tech,
   Projects,
-  CosmicBackground,
   Contracts,
   Achievements,
 } from "./components";
 
+const CosmicBackground = lazy(
+  () => import("./components/canvas/CosmicBackground")
+);
 const Layout = () => {
   return (
-    <div className="relative z-0 bg-primary">
-      <div className=" fixed h-screen w-full z-[100] left-0 top-0 overflow-hidden">
+    <div className="relative bg-primary">
+      <div className=" fixed h-screen w-full left-0 top-0 overflow-hidden">
         <CosmicBackground />
       </div>
       <div className="relative bg-cover bg-opacity-20 bg-no-repeat bg-center">
