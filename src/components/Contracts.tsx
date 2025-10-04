@@ -7,7 +7,7 @@ import { SectionWrapper } from "../hoc";
 
 function Contracts() {
   return (
-    <>
+    <section className="w-full padding-4 sm:p-10">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Experience</h2>
@@ -31,7 +31,7 @@ function Contracts() {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </section>
   );
 }
 

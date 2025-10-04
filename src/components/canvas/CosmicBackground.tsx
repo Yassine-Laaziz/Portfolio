@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Stars, Sparkles } from "@react-three/drei";
+import { Stars, Sparkles, Preload } from "@react-three/drei";
 import * as THREE from "three";
 
 // Galaxy component
@@ -180,8 +180,9 @@ function CosmicScene() {
 export default function CosmicBackground() {
   return (
     <div className="absolute inset-0">
-      <Canvas className="z-10" camera={{ position: [2, 2, 1], fov: 60 }}>
+      <Canvas frameloop="always" camera={{ position: 0, fov: 60 }}>
         {/* {!isMobile && <OrbitControls enableZoom={false} />} */}
+        <Preload all />
         <CosmicScene />
       </Canvas>
     </div>

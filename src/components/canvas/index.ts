@@ -1,4 +1,5 @@
-import EarthCanvas from './Earth'
-import CosmicBackground from './CosmicBackground'
+import { lazy } from "react";
+const EarthCanvas = lazy(() => import("./Earth"));
+const CosmicBackground = lazy(() => import("./CosmicBackground"));
 
-export { EarthCanvas, CosmicBackground }
+export { EarthCanvas, CosmicBackground };
