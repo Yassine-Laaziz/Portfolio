@@ -2,9 +2,8 @@
 
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Stars, Sparkles, OrbitControls } from "@react-three/drei";
+import { Stars, Sparkles } from "@react-three/drei";
 import * as THREE from "three";
-import { isMobile } from "react-device-detect";
 
 // Galaxy component
 function Galaxy({
@@ -181,7 +180,7 @@ function CosmicScene() {
 export default function CosmicBackground() {
   return (
     <div className="absolute inset-0">
-      <Canvas className="z-10" camera={{ position: [2, 2, isMobile ? 0 : 1], fov: 60 }}>
+      <Canvas className="z-10" camera={{ position: [2, 2, 1], fov: 60 }}>
         {/* {!isMobile && <OrbitControls enableZoom={false} />} */}
         <CosmicScene />
       </Canvas>
