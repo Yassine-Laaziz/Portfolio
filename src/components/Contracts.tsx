@@ -22,7 +22,7 @@ function Contracts() {
           understanding technical requirements and delivering quality work
           within agreed timelines; My ability to adapt to different project
           requirements and work seamlessly with tech teams made me a reliable
-          partner and leader.
+          leader and partner.
         </motion.p>
       </div>
 

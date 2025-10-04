@@ -19,19 +19,19 @@ const Hero = () => {
             >
               <Sparkles className="text-indigo-400" size={24} />
             </motion.div>
-            <h2 className="text-indigo-400 font-bitcount-ink min-w-fit text-lg md:text-2xl font-medium tracking-[0.2em] uppercase">
+            <span className="text-indigo-400 font-bitcount-ink min-w-fit text-lg md:text-2xl font-medium tracking-[0.2em] uppercase">
               A Software engineer
-            </h2>
+            </span>
           </div>
 
-          <motion.h2
+          <motion.span
             initial={{ x: -200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ type: "spring", delay: 0.5, duration: 2 }}
             viewport={{ once: true}}
           >
             Creating an experience
-          </motion.h2>
+          </motion.span>
         </motion.h1>
       </div>
     </section>

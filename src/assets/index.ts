@@ -5,6 +5,7 @@ import menu from "./misc/menu.svg";
 import close from "./misc/close.svg";
 import Icon3D from "./misc/3D_icon.png";
 import CyberSecurity from "./misc/CyberSecurity.png";
+import scrollCircleText from "./misc/scrollCircleText.svg"
 
 import figma from "./tech/figma.png";
 import mongodb from "./tech/mongodb.png";
@@ -84,4 +85,5 @@ export {
   k8s,
   devops,
   aws,
+  scrollCircleText
 };

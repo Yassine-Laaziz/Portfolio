@@ -10,6 +10,7 @@ import Projects from './Projects'
 import Contracts from './Contracts'
 import Achievements from './Achievements'
 import SoftSkills from './SoftSkills'
+import ScrollLoading from './ScrollLoading'
 
 export {
   Hero,
@@ -25,4 +26,5 @@ export {
   CosmicBackground,
   SoftSkills,
   Achievements,
+  ScrollLoading,
 }

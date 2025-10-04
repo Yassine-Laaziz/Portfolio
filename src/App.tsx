@@ -10,6 +10,7 @@ import {
   Contracts,
   Achievements,
   CosmicBackground,
+  ScrollLoading,
 } from "./components";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <div className=" fixed h-screen w-full left-0 top-0 overflow-hidden">
             <CosmicBackground />
           </div>
+          <ScrollLoading />
           <div className="relative bg-cover bg-opacity-20 bg-no-repeat bg-center">
             <Navbar />
             <Hero />
