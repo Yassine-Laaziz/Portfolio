@@ -36,7 +36,7 @@ import {
   aws,
   expressjs,
   actions,
-} from "./assets";
+} from "../public/assets";
 import { achievementT, experienceT, projectT, softSkillsT } from "../types";
 
 export const navLinks: { id: string; title: string }[] = [
