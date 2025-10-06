@@ -21,18 +21,18 @@ const ScrollLoading = () => {
   });
 
   return (
-    <div className="fixed z-50 bottom-8 right-12 md:bottom-28 md:right-24">
+    <div className="fixed z-50 bottom-14 right-14 md:bottom-28 md:right-24">
       <div className="top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-fit h-fit bg-red">
         {/* Small Circle */}
         <motion.div
-          className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 h-20 w-20 inline-block"
+          className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 h-12 w-12 md:h-20 md:w-20 inline-block"
           style={{ rotate: progress.smallCircle, translate: "-50% -50%" }}
         >
           <img src={scrollCircleText} className="h-full w-full" />
         </motion.div>
         {/* Big Circle */}
         <motion.div
-          className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 h-36 w-36 inline-block"
+          className="p-1 bg-black bg-opacity-50 sm:bg-opacity-0  rounded-full -z-10 absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 h-24 w-24 md:h-36 md:w-36 inline-block"
           style={{ rotate: progress.BigCircle, translate: "-50% -50%" }}
         >
           <img src={scrollCircleText} className="h-full w-full" />
@@ -40,7 +40,7 @@ const ScrollLoading = () => {
         {/* Arrow */}
         <motion.div style={{ rotate: progress.arrow }}>
           <svg
-            className="absolute bottom-0 left-0 -translate-x-1/2 h-20 w-fit fill-white"
+            className="absolute bottom-0 left-0 -translate-x-1/2 h-14 md:h-20 w-fit fill-white"
             viewBox="0 0 9.28 87.05"
           >
             <g>
