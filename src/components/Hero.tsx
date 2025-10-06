@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-
 import styles from "../styles";
 import { Sparkles } from "lucide-react";
+import { Resume } from "../assets";
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row flex-shrink items-start gap-5`}
       >
-        <motion.h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] tracking-tight relative">
+        <motion.h1 className="font-bold leading-[0.9] tracking-tight relative">
           {/* text with 2 spinning icons around it */}
           <div className="flex gap-2" id="top-text">
             <motion.div
@@ -25,13 +25,45 @@ const Hero = () => {
           </div>
 
           <motion.span
-            initial={{ x: -200, opacity: 0 }}
+            className="text-6xl md:text-8xl lg:text-9xl"
+            initial={{ x: -20, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ type: "spring", delay: 0.5, duration: 2 }}
-            viewport={{ once: true}}
+            viewport={{ once: true }}
           >
             Creating an experience
           </motion.span>
+          <div className="mt-10 flex flex-wrap gap-5">
+            <a href={Resume} download="Resume.pdf">
+              <motion.button
+                className="border border-gray-600 text-gray-300 px-8 py-4 rounded-full font-semibold backdrop-blur-sm"
+                initial={{
+                  x: -20,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    delay: 1,
+                    duration: 0.5,
+                    type: "spring",
+                  },
+                }}
+                whileTap={{ scale: 0.95 }}
+                whileHover={{
+                  borderColor: "#9ca3af",
+                  transition: {
+                    delay: 0,
+                    duration: 0,
+                  },
+                }}
+                viewport={{ once: true }}
+              >
+                Download resume
+              </motion.button>
+            </a>
+          </div>
         </motion.h1>
       </div>
     </section>
