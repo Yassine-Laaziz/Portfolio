@@ -48,13 +48,13 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10 font-bitcount-ink">
           {navLinks.map(nav => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[18px] font-bitcount-ink cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -79,7 +79,7 @@ const Navbar = () => {
               {navLinks.map(nav => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                  className={`font-bitcount-ink font-medium cursor-pointer text-[16px] ${
                     active === nav.title ? 'text-white' : 'text-secondary'
                   }`}
                   onClick={() => {
