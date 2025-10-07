@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "../styles";
 import { Sparkles } from "lucide-react";
-import { Resume } from "../../public/assets";
+import { Resume } from "../assets";
 
 const Hero = () => {
   return (

@@ -1,7 +1,7 @@
 import { useMotionValueEvent, useScroll, useSpring } from "framer-motion";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { scrollCircleText } from "../../public/assets";
+import { scrollCircleText } from "../assets";
 
 const ScrollLoading = () => {
   const [progress, setProgress] = useState({ smallCircle: 180, BigCircle: 0, arrow: 0 });

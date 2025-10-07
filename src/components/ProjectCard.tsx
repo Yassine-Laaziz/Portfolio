@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
-import { github } from "../../public/assets";
+import { github } from "../assets";
 import { fadeIn } from "../utils/motion";
 import { projectT } from "../../types";
 

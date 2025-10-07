@@ -36,14 +36,10 @@ import {
   aws,
   expressjs,
   actions,
-} from "../public/assets";
+} from "./assets";
 import { achievementT, experienceT, projectT, softSkillsT } from "../types";
 
 export const navLinks: { id: string; title: string }[] = [
-  {
-    title: "About",
-    id: "about",
-  },
   {
     title: "work",
     id: "contracts",
@@ -55,6 +51,10 @@ export const navLinks: { id: string; title: string }[] = [
   {
     title: "Tech",
     id: "tech",
+  },
+  {
+    title: "Achievements",
+    id: "achievements",
   },
   {
     title: "Contact",
